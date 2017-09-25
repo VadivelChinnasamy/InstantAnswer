@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:ems="10"
+        android:id="@+id/title_about"
+
+        android:textSize="15sp"
+        android:fontFamily="@font/days_one"
+        android:text="Instant Answer"
+
+         />
+
+    <TextView
+        android:id="@+id/about_app_desc"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:ems="10"
+        android:text="@string/about_app" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.duckduckgo.HomeFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/include_searchbar" />
+
+    <LinearLayout
+        android:id="@+id/readmore_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/abstract_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:gravity="center|left"
+            android:lineSpacingExtra="6sp"
+
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:text=""
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/read_more_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:padding="10sp"
+            android:text="ReadMore..."
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:visibility="visible"
+
+        />
+
+    <ImageView
+        android:id="@+id/no_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:src="@mipmap/ic_empty"
+        android:visibility="gone" />
+</LinearLayout>
